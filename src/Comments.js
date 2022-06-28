@@ -9,7 +9,7 @@ function Comments() {
 		<div>
 			<CommentForm />
 			<div>
-				{comments.map(() => (
+				{comments.map(comment => (
 					<Comment />
 				))}
 			</div>
