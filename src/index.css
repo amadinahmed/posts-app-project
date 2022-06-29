@@ -124,6 +124,7 @@ p {
 .comment {
 	padding-left: 5%;
 	position: relative;
+	margin-bottom: 1rem;
 }
 
 .comment::after {

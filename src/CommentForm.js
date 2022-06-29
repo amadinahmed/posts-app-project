@@ -39,7 +39,7 @@ const CommentForm = forwardRef(
 					placeholder='Text'
 					value={text}
 				></textarea>
-				<button onClick={submit} type='button'>
+				<button disabled={!valid} onClick={submit} type='button'>
 					<span>Submit </span>
 					<FontAwesomeIcon icon={faPaperPlane} />
 				</button>
