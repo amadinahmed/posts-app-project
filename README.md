@@ -23,3 +23,6 @@ _⚠️ Quick Tip! When working with lists of identical components being mapped 
 - Database work; This is a single user application and therefore nothing must be saved or authenticated
 - CSS is optional however default styling can sometimes be hard to look at
 - External state managment tools like Redux; props passing and hooks should be enough to do the basic functions of the app
+
+## Submiting your project
+When you are finished go through the steps to host your app on Netlify. For the build command, if it is not already filled in type: `npm run build`. This will create a production build of your project for serving. Post your link when finished in the Slack channel when ready.
