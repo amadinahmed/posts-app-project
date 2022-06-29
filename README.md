@@ -1,70 +1,25 @@
-# Getting Started with Create React App
+# Posts App Project
+This is an intermediate project which will allow for learning the basics of React by creating an app that resembles the basic functions of a social media website like [reddit.com](reddit.com). This repo contains a basic template with the proper packages, file structure, and components nescessary to add functionality to your app. However, feel free to change components, JSX, etc. as you see fit or not use this template whatsoever. Additionally, you can find an example final product I created for inspiration or check the completed branch of this repo to see how I implented certain features [(View it here)](https://glittering-youtiao-d1213c.netlify.app). To setup your workspace, simply clone this repo to your computer and run the command `npm install` to install all nescessary node modules. The command to run a dev local server is `npm run start`.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Features in the final product
+- Add a title in the very top of your app by adding an h1 element
+- The user should be able to create a post via the `PostForm` component which then adds a new post to the `Posts` state
+- Set the submit button's `disabled` property to `true` whenever the input is _invalid_ meaning only whitespace or entirely empty
+- A post should store their writer's name, a title, text content (when working with input elements, its helpful to use a concept called [controlled components](https://reactjs.org/docs/forms.html#controlled-components))
+- All posts should be able to be commented on with the `CommentForm` component, thereby adding a new comment object to the `Comments` component's state
+- A comment should store the commenter's name and comment
+- The whole app should only use functional components
 
-## Available Scripts
+_⚠️ Quick Tip! When working with lists of identical components being mapped from a list such as multiple `Comment` components from the `Comments` component, remember to add a unique key property for each component or else React will throw an error_
 
-In the project directory, you can run:
+### Additional features that are encouraged
+- Try to limit the ability to create infinite comment recursion
+- Try adding a `Voter` component to be able to rate both posts/comments
+- Try to sort the posts by votes (consider using `array.sort()`)
+- Try adding the ability to edit previously made posts/comments (consider reusing the respective form components to reveal themself when the user is in "edit mode")
+- Try adding the ability to insert images via url (consider creating a new component called something like `Image`)
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### What is *__not__* required
+- Database work; This is a single user application and therefore nothing must be saved or authenticated
+- CSS is optional however default styling can sometimes be hard to look at
+- External state managment tools like Redux; props passing and hooks should be enough to do the basic functions of the app
