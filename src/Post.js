@@ -28,7 +28,7 @@ function Post({ name, title, text }) {
         setCount(count+1);
       }, [count]);
 
-      const downClick = useCallback((e) => {
+    const downClick = useCallback((e) => {
         setCount(count-1);
     }, [count]);
 
@@ -60,7 +60,7 @@ function Post({ name, title, text }) {
 						<button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ' onClick={toggleEditMode}>
 							 Edit
 						</button>
-						<div className='pt-2' >
+						<div className='pt-2 ' >
 							{subPost ? (
 								<Comments/>
 							):(

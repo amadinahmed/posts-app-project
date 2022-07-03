@@ -27,7 +27,7 @@ function Comment({name,text}) {
 						onSubmit={editComment}
 					/>
 				) : (
-					<div className='block p-5 max-w-sm bg-gray rounded-lg border border-gray-200 '>
+					<div className='block p-5 max-w-sm bg-gray border-l-2 border-gray-200 '>
 						<div className='comment-content'>
 							<h3 className='text-white font-bold ' >Comment</h3>
 							<h4 className=' text-white font-medium text-sm sm:text-base truncate' >@{Name}</h4>
