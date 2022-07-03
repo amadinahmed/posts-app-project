@@ -40,7 +40,7 @@ function Comment({name,text}) {
 								<Comments/>
 							) : (
 								<button className='bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded ' onClick={() => setSubComment(true)}>
-								Make Comment
+								Reply
 								</button>
 							)}
 							</div>
